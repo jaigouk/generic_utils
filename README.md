@@ -1,5 +1,7 @@
 # utils
 
+[![Go](https://github.com/jaigouk/utils/actions/workflows/main.yml/badge.svg)](https://github.com/jaigouk/utils/actions/workflows/main.yml)
+
 utils based on generics
 
 - Contains returns true if element is in array
