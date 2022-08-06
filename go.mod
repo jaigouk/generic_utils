@@ -1,4 +1,4 @@
-module github.com/jaigouk/utils
+module github.com/jaigouk/generic_utils
 
 go 1.18
 

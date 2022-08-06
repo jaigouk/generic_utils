@@ -1,4 +1,4 @@
-# utils
+# generic utils
 
 [![Go](https://github.com/jaigouk/utils/actions/workflows/main.yml/badge.svg)](https://github.com/jaigouk/utils/actions/workflows/main.yml)
 
@@ -13,7 +13,9 @@ utils based on generics
 
 
 ```go
-import "github.com/jaigouk/utils"
+import (
+  utils "github.com/jaigouk/generic_utils"
+)
 
 elems := []string{"a", "b", "c"}
 utils.Contains(elems, "b") // bool
