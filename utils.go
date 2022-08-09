@@ -73,3 +73,13 @@ func Uniq[T comparable](s []T) []T {
 	}
 	return result
 }
+
+// ReverseArray returns reversed array
+func ReverseArray[T any](a []T) []T {
+  itemCount := len(a)
+  for i := 0; i < itemCount/2; i++ {
+    mirrorIdx := itemCount - i - 1
+    a[i], a[mirrorIdx] = a[mirrorIdx], a[i]
+  }
+  return a
+}

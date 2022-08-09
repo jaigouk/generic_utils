@@ -173,3 +173,25 @@ func TestUniq(t *testing.T) {
 		}
 	})
 }
+
+func TestReverseArray(t *testing.T) {
+  t.Run("ReverseArray reverses array", func(t *testing.T) {
+		array := []int{1, 2, 3}
+		g.ReverseArray(array)
+		if array[0] != 3 || array[1] != 2 || array[2] != 1 {
+			t.Error("Expected 3, 2, 1, got", array)
+		}
+
+		stringArray := []string{"a", "b", "c"}
+		g.ReverseArray(stringArray)
+		if stringArray[0] != "c" || stringArray[1] != "b" || stringArray[2] != "a" {
+			t.Error("Expected c, b, a, got", stringArray)
+		}
+
+		floatArray := []float64{1.2, 2.3, 3.4}
+		g.ReverseArray(floatArray)
+		if floatArray[0] != 3.4 || floatArray[1] != 2.3 || floatArray[2] != 1.2 {
+			t.Error("Expected 3.4, 2.3, 1.2, got", floatArray)
+		}
+	})
+}
